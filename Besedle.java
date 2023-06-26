@@ -124,7 +124,7 @@ public class Besedle {
                 } else if (iskanaBeseda.contains(Character.toString(ugibanaBeseda.charAt(stevec)))) {
                     tabelaBesed[stevec] = 2;
                     int indeks = abeceda.indexOf(ugibanaBeseda.charAt(stevec));
-                    barveAbecede[indeks] = 2;
+                    if (barveAbecede[indeks]!=3) barveAbecede[indeks] = 2;
                 }
                 else{
                     tabelaBesed[stevec] = 1;
